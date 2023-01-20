@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    tools:context=".ResetActivity">
+
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:autoSizeMaxTextSize="36sp"
+        app:autoSizeMinTextSize="36sp"
+        app:autoSizeTextType="none"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <TextView
+        android:id="@+id/resetmailTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        app:autoSizeMaxTextSize="36sp"
+        app:autoSizeMinTextSize="36sp"
+        app:autoSizeTextType="none"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toTopOf="@+id/resetPassword"
+        app:layout_constraintEnd_toEndOf="@+id/resetPassword"
+        app:layout_constraintStart_toStartOf="@+id/resetPassword"
+        app:layout_constraintTop_toBottomOf="@+id/signUpText"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <EditText
+        android:id="@+id/resetPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_security"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="4dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpText" />
+
+    <EditText
+        android:id="@+id/resetConfirmPassword"
+        android:textColorHint="@color/gray"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_security"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="4dp"
+        android:paddingStart="10dp"
+        android:hint="Confirm Password"
+        android:textColor="@color/black"
+        app:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/resetPassword"
+        app:layout_constraintStart_toStartOf="@+id/resetPassword"
+        app:layout_constraintTop_toBottomOf="@+id/resetPassword" />
+
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_bg"
+        android:text="Change password"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/resetConfirmPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/resetConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/resetConfirmPassword"
+        app:layout_constraintVertical_bias="0.085" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

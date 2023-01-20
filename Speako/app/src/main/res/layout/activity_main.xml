@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/white_bg"
+    >
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_bg"
+        android:text="LOAD"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnSave"
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave" />
+
+    <EditText
+        android:id="@+id/txtSpeak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:hint="Type here or just speak!"
+        android:textColorHint="@color/gray"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSpeech"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <Button
+        android:id="@+id/btnSpeech"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:text="Speak"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_bg"
+        android:text="SAVE"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnSpeech"
+        app:layout_constraintStart_toStartOf="@+id/btnSpeech"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpeech" />
+
+    <Button
+        android:id="@+id/btnCopy"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_bg"
+        android:text="COPY"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnLoad"
+        app:layout_constraintStart_toStartOf="@+id/btnLoad"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoad" />
+
+    <Button
+        android:id="@+id/btnSignout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_bg"
+        android:text="SIGN OUT"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnCopy"
+        app:layout_constraintStart_toStartOf="@+id/btnCopy"
+        app:layout_constraintTop_toBottomOf="@+id/btnCopy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
